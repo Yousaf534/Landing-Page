@@ -11,28 +11,19 @@ div.header div.right {
     display:flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 div.hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 div.hero div.left {
-    display: flex;
-    flex-direction: column;
-    align-items: above;
-    margin-left: 175px;
-}
-
-div.hero div.right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 170px;
+    max-width: 500px;
 }
 
 div.information {
@@ -53,11 +44,19 @@ div.information div.bottom {
     display: flex;
     align-items: center;
     gap: 50px;
+    
 }
 
 div.information div.section {
-    max-width: 150px;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div.information div.imgp {
+    max-width: fit-content;
+   
 }
 
 div.info {
@@ -74,13 +73,49 @@ div.information img {
     border-radius: 20px;
 }
 
+div.quotesection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 div.quotesection div.quote {
     display:flex;
+    justify-content: center;
+    align-items: center;
 } 
+
+div.quotesection div.author {
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+div.SignUp {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px;
+}
+
+div.SignUp div.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.SignUp div.right {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
 
 
 body {
-    max-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
@@ -165,10 +200,15 @@ div.quotesection div.quote {
 div.quotesection div.author {
     color: black;
     font-weight: bold;
+    font-size: 20px;
 }
 
 div.SignUp {
     background-color: #3882F6;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 div.SignUp div.first {
@@ -187,10 +227,7 @@ div.SignUp button {
     background-color: #3882F6;
     border: 1px solid white;
     border-radius: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 5px 20px 5px 20px;
 }
 
 div.footer p {
@@ -200,9 +237,20 @@ div.footer p {
 
 div.footer {
     display: flex;
-    height: 100vh;
     justify-content: center;
     padding: 10px;
     margin-top: auto;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #E5E7EB;
+}
